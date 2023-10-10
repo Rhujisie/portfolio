@@ -1,0 +1,214 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
+
+:root{
+  --background: #eee9e9;
+  --color: #383838;
+  --secondary: #8a8787;
+}
+*, *::after, *::before{
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Maven Pro', sans-serif;
+  color: var(--color);
+  letter-spacing: .05em;
+  line-height: 1.2em;
+}
+.App{
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background);
+}
+/* //hide scroll bar */
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+
+/* //profile */
+.profile-container{
+  background-color: var(--background);
+  position: sticky;
+  top: 0px;
+  width: 100vw;
+  height: 450px;
+  z-index: 0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.profile{
+  position: relative;
+  height: 100%;
+  /* animation: dropdown-profile 2s ease; */
+}
+.photo{
+  position: absolute;
+  background-color: var(--background);
+  padding-left:300px;
+  top: 50% !important;
+  transform: translateY(-50%);
+  left: 300px;
+  z-index: 1;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+.photo > img{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  animation: photo 3s ease;
+}
+@keyframes photo {
+  0% {transform:rotate(0deg); opacity: 0;}
+  30% {opacity: 1}
+  100% {transform:rotate(360deg);}
+}
+.description{
+  position: absolute;
+  width: 650px;
+  top: 70px;
+  left: 1020px;
+  animation: info 3s ease;
+}
+@keyframes info {
+  from{transform: translateX(-600px)}
+  to{transform: translateX(0px);}
+}
+.name{
+  font-size: 45px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.desc{
+  font-size: 25px;
+}
+/* info */
+.title{
+  font-size: 40px;
+  text-align: center;
+  padding: 10px;
+}
+.subtitle{
+  font-size: 20px;
+}
+.para{
+  font-size: 16px;
+  color: var(--secondary);
+  margin-bottom: 20px;
+}
+.extra{
+  font-size: 30px;
+}
+.tech-stack{
+  margin-top: 50px;
+}
+.tech-stack, .languages{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+  margin-bottom: 5px;
+}
+.tech-stack > div, .languages > div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+/* //project container */
+.project-title{
+  font-weight: bold;
+  font-size: 55px;
+  background-color: transparent;
+  text-align: center;
+  animation: project-title 2s;
+  animation-fill-mode: forwards;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  color: transparent;
+  background-image: url('./images/wallpaper.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-clip: text;
+}
+@keyframes project-title {
+  0%{font-size: 600px}
+  6%{font-size: 600px}
+  100%{font-size: 55px}
+}
+.project-container{
+  position: relative;
+  z-index: 1;
+  width: 100vw;
+  min-height: calc(100vh - 450px);
+  background-color: rgb(255, 255, 255);
+}
+.project{
+  width: 100vw;
+  display:flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5vw;
+  transform: translate(100vw);
+  animation: project-slide 2s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  height: 400px;
+}
+@keyframes project-slide {
+  from {transform: translate(100vw)}
+  to {transform: translate(0)}
+}
+.image-container{
+  width: 700px;
+  height: 100%;
+}
+.image-container > img{
+  width: 700px;
+  transition: all 1s ease;
+  background-color:transparent;
+}
+.image-container > img:hover{
+  transform: scale(1.1);
+}
+.project-desc{
+  margin-top: 30px;
+  width: 400px;
+}
+.sticky{
+  /* background-image: linear-gradient(to top, #00c8c8, #00cfd2, #00d6dc,
+   #00dde7, #00e4f1, #49e8f6, #6aecfb, #83f0ff, #aff1ff,
+    #d5f3ff, #f1f7ff, #ffffff); */
+  /* background-attachment: fixed; */
+}
+/* @keyframes backgroundChange {
+  from {back}
+} */
+.project1{
+  padding-top: 0px !important;
+}
+
+/* parallax */
+.parallax{
+  background-position: center;
+  background-attachment: fixed;
+  width:50vw;
+  height: 70px;
+  margin: auto;
+  border-radius: 35px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.parallax1{
+  background-image: url('./images/wallpaper.jpg');
+}
+.parallax2{
+  background-image: url('./images/zX4.gif');
+}
+.parallax3{
+  background-image: url('./images/9LIY.gif');
+}
+
