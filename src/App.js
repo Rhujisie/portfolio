@@ -1,6 +1,7 @@
 import './App.css';
 import Profile from './component/Profile'
 import Project from './component/Project'
+import Footer from './component/Footer'
 
 import { useState, useEffect} from 'react'
 // import lodash from 'lodash'
@@ -33,6 +34,7 @@ function App() {
     <div className="App">
       <Profile pixel={pixel}/>
       <Project pixel={pixel}/>
+      <Footer/>
     </div>
   );
 }

@@ -1,13 +1,13 @@
 import Nestin from '../images/nestin.gif'
 import Flappy from '../images/flappy.gif'
 import chitchat from '../images/chitchat.gif'
+import Ext from '../images/ext.gif'
 
-import { useRef, useEffect, useState} from 'react'
+import { useRef, useEffect} from 'react'
 
 export default function Project({pixel}){
     const titleRef = useRef()
     const projectRef = useRef()
-    const [sticky, setSticky] = useState(false)
 
     // 0,200,200
     //move title to the left
@@ -18,20 +18,21 @@ export default function Project({pixel}){
         pixel < 450 && moveTitleLeft()
     }, [pixel])
     //change background color on scroll
-    // useEffect(()=>{
-    //     const bobDiv = ()=>{
-    //         let top = projectRef.current.getBoundingClientRect().top
-    //         if(top < 500){
-    //             // console.log(top)
-    //             // setSticky(true)
-    //             //projectRef.current.style.backgroundColor = `rgb(${})`
-    //         }
-    //     }
-    //     bobDiv()
-    // }, [pixel])
+    useEffect(()=>{
+
+        const bobDiv = ()=>{
+            const threshold = 150;
+            // rgb(223, 204, 251)
+            let red = Math.min(255, Math.max(223, 255 - ((pixel / 2) - threshold)));
+            let green = Math.min(255, Math.max(204, 255 - ((pixel / 2)- threshold)));
+            let blue = Math.min(255, Math.max(251, 255 - ((pixel / 2) - threshold)));
+            projectRef.current.style.backgroundColor = `rgb(${red},${green},${blue})`;
+        }
+        bobDiv()
+    }, [pixel])
 
     return(
-        <div className={`project-container`}>
+        <div className={`project-container`} ref={projectRef}>
             <div className='project-title' ref={titleRef}>Projects</div>
             {/* project */}
             <div className={'project project1'}>
@@ -43,9 +44,10 @@ export default function Project({pixel}){
                     <p className='para'>Share your place for the whole world to see.</p>
                     <h2 className='subtitle'> Technologies used</h2>
                     <li>MERN</li>
-                    <li>Authnetication</li>
-                    <li>Responsive</li>
+                    <li>User Authnetication</li>
+                    <li>Responsive Web design</li>
                     <li>Restfull API</li>
+                    <li>User review and rating system</li>
                 </div>
             </div>
             {/* parallax */}
@@ -83,6 +85,20 @@ export default function Project({pixel}){
             </div>
             {/* parallax */}
             <div className='parallax3 parallax'></div>
+             {/* project */}
+             <div className='project'>
+                <div className='image-container'>
+                    <img src={Ext} alt='mac'/>
+                </div>
+                <div className='project-desc'>
+                    <h1 className='title'>Chrome Extension</h1>
+                    <p className='para'> enhances the video-watching experience by allowing users to bookmark specific points on a video timeline for quick navigation and reference.</p>
+                    <h2 className='subtitle'> Technologies used</h2>
+                    <li>Html</li>
+                    <li>Css</li>
+                    <li>Javascript</li>
+                </div>
+            </div>
         </div>
     )
 }
