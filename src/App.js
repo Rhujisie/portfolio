@@ -1,6 +1,7 @@
 import './App.css';
 import Profile from './component/Profile'
 import Project from './component/Project'
+import Certificate from './component/Certificate';
 import Footer from './component/Footer'
 
 import { useState, useEffect} from 'react'
@@ -34,6 +35,7 @@ function App() {
     <div className="App">
       <Profile pixel={pixel}/>
       <Project pixel={pixel}/>
+      <Certificate pixel={pixel}/>
       <Footer/>
     </div>
   );
