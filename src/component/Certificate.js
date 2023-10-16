@@ -13,17 +13,15 @@ export default function Certificate({pixel}){
     const nameRefs = useRef([])
     const projectRef = useRef()
 
-    const [hover, setHover] = useState('')
-
     //change background color on scroll
-    //rgb(25, 23, 23)
+    //rgb(0, 21, 36)
     useEffect(()=>{
         const bobDiv = ()=>{
-            const threshold = 900;
+            const threshold = 800;
             // rgb(223, 204, 251)
-            let red = Math.min(25, Math.max(223, 255 - ((pixel / 1.5) - threshold)));
-            let green = Math.min(23, Math.max(204, 255 - ((pixel / 1.5)- threshold)));
-            let blue = Math.min(23, Math.max(251, 255 - ((pixel / 1.5) - threshold)));
+            let red = Math.min(223, Math.max(0, 255 - ((pixel / 2.5) - threshold)));
+            let green = Math.min(204, Math.max(21, 255 - ((pixel / 2.5)- threshold)));
+            let blue = Math.min(251, Math.max(36, 255 - ((pixel / 2.5) - threshold)));
             projectRef.current.style.backgroundColor = `rgb(${red},${green},${blue})`;
             }
         bobDiv()

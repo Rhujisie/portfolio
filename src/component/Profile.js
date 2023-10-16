@@ -1,4 +1,5 @@
 import Man from '../images/man.jpeg'
+import Esie from '../images/esie.jpg'
 import { useEffect, useRef } from 'react'
 
 export default function Profile({pixel}){
@@ -16,7 +17,7 @@ export default function Profile({pixel}){
         <div className='profile-container'>
             <div className='profile'>
                 <div className='photo' style={{width: '600px'}}>
-                    <img src={Man} alt='profile' ref={photoRef}/>
+                    <img src={Esie} alt='profile' ref={photoRef}/>
                 </div>
                 <div className='description' ref={desRef}>
                     <div className='name'>Rhujisie Kajiri</div>

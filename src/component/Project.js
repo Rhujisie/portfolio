@@ -89,6 +89,7 @@ export default function Project({pixel}){
         <div className={`project-container`} ref={projectRef}>
             <div className='project-title' ref={titleRef}>Projects</div>
             {/* project */}
+            <a href='https://github.com/Rhujisie/NestIn.git' target='_blank'>
             <div className={'project project1'} ref={project1Ref}>
                 <div className='image-container'>
                     <img src={Nestin} alt='mac'/>
@@ -104,9 +105,11 @@ export default function Project({pixel}){
                     <li>User review and rating system</li>
                 </div>
             </div>
+            </a>
             {/* parallax */}
             <div className='parallax1 parallax'></div>
             {/* project */}
+            <a href='https://github.com/Rhujisie/chitchat.git' target='_blank'>
             <div className='project' ref={project2Ref}>
                 <div className='image-container'>
                     <img src={chitchat} alt='mac'/>
@@ -121,9 +124,11 @@ export default function Project({pixel}){
                     <li>Restfull API</li>
                 </div>
             </div>
+            </a>
             {/* parallax */}
             <div className='parallax2 parallax'></div>
             {/* project */}
+            <a href='https://github.com/Rhujisie/flappybird.git' target='_blank'>
             <div className='project'  ref={project3Ref}>
                 <div className='image-container'>
                     <img src={Flappy} alt='mac'/>
@@ -137,9 +142,11 @@ export default function Project({pixel}){
                     <li>Javascript</li>
                 </div>
             </div>
+            </a>
             {/* parallax */}
             <div className='parallax3 parallax'></div>
              {/* project */}
+             <a href='https://github.com/Rhujisie/Youtube-bookmark.git' target='_blank'>
              <div className='project' ref={project4Ref}>
                 <div className='image-container'>
                     <img src={Ext} alt='mac'/>
@@ -153,6 +160,7 @@ export default function Project({pixel}){
                     <li>Javascript</li>
                 </div>
             </div>
+             </a>
         </div>
     )
 }

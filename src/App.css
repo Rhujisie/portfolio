@@ -18,6 +18,9 @@
 html{
   scroll-snap-type:y proximity;
 }
+a{
+  text-decoration: none;
+}
 .App{
   width: 100vw;
   height: 100vh;
@@ -63,7 +66,7 @@ html{
   animation: photo 2s ease;
 }
 @keyframes photo {
-  0% {transform:rotate(180deg); opacity: 0;}
+  0% {transform:rotate(180deg);}
   30% {opacity: 1}
   100% {transform:rotate(360deg);}
 }
