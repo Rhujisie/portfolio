@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.f31e957f.css",
-    "main.js": "/portfolio/static/js/main.21cc7cce.js",
+    "main.css": "/portfolio/static/css/main.f080372d.css",
+    "main.js": "/portfolio/static/js/main.5aa615be.js",
     "static/media/ext.gif": "/portfolio/static/media/ext.00138c92abf0920fef2f.gif",
     "static/media/nestin.gif": "/portfolio/static/media/nestin.6a2d9b29e9adaf3e4a98.gif",
     "static/media/flappy.gif": "/portfolio/static/media/flappy.746ff64ecf8fad54627b.gif",
     "static/media/chitchat.gif": "/portfolio/static/media/chitchat.8fc395ec7045b2ecfee6.gif",
+    "static/media/esie.jpg": "/portfolio/static/media/esie.1147102219b3e336503a.jpg",
     "static/media/man.jpeg": "/portfolio/static/media/man.3176195841e81d7d05b5.jpeg",
     "static/media/dsa.png": "/portfolio/static/media/dsa.26c80e8241d69492de7d.png",
     "static/media/backend.png": "/portfolio/static/media/backend.17f3dc8865970979aeff.png",
@@ -16,11 +17,11 @@
     "static/media/github.png": "/portfolio/static/media/github.05f6c17b8cd04c28456f.png",
     "static/media/gmail.png": "/portfolio/static/media/gmail.a2f2146f929409405da0.png",
     "index.html": "/portfolio/index.html",
-    "main.f31e957f.css.map": "/portfolio/static/css/main.f31e957f.css.map",
-    "main.21cc7cce.js.map": "/portfolio/static/js/main.21cc7cce.js.map"
+    "main.f080372d.css.map": "/portfolio/static/css/main.f080372d.css.map",
+    "main.5aa615be.js.map": "/portfolio/static/js/main.5aa615be.js.map"
   },
   "entrypoints": [
-    "static/css/main.f31e957f.css",
-    "static/js/main.21cc7cce.js"
+    "static/css/main.f080372d.css",
+    "static/js/main.5aa615be.js"
   ]
 }
