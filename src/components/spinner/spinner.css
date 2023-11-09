@@ -1,0 +1,39 @@
+.spinner-container{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #252525;
+    border: 1px solid var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:  relative;
+    box-shadow: black 0px 5px 15px;
+}
+.spinner-number{
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.text > span{
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    font-weight: 500px;
+    left: 50%;
+    transform-origin: 0 74px;
+}

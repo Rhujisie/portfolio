@@ -1,0 +1,26 @@
+  .chitchat{
+    background-color: rgba(145, 86, 255, .2);
+  }
+  .chitchat-image-container{
+    object-fit: contain;
+    width: 1000px;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  .chitchat-img-1{
+    height: 100%;
+    border-top: 2px solid #9156ff;
+    border-bottom: 2px solid #9156ff;
+    border-left: 2px solid #9156ff;
+    position: relative;
+    z-index: 1;
+  }
+  .chitchat-img-2{
+    height: 100%;
+    border-top: 2px solid #9156ff;
+    border-bottom: 2px solid #9156ff;
+    border-right: 2px solid #9156ff;
+  }

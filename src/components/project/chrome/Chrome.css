@@ -1,0 +1,18 @@
+  .chrome{
+    background-color: rgba(205, 32, 31, .2);
+  }
+  .chrome-image-container{
+    object-fit: contain;
+    width: 1000px;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  .chrome-img-1{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: contain;
+  }

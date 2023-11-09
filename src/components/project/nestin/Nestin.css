@@ -1,0 +1,101 @@
+
+.project{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    width: 100%;
+    height: 80vh;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    padding: 0 50px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid black;
+    overflow: hidden;
+}
+/* description */
+.project-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px 0;
+    gap: 20px;
+    width: 680px;
+    height: 100%;
+}
+.project-desc > .subtitle{
+  margin-top: 10px;
+}
+.project-heading{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.tech-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.tech-name{
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 5px 10px;
+}
+.visit-button{
+  padding: 5px 10px;
+  font-size: 26px;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 5px;
+  color: vaR(--background);
+  background-color: var(--color);
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 200px;
+}
+.export-icon{
+  width: 20px;
+}
+.conclusion-container{
+  width: 100%;
+  height: 250px;
+  border-radius: 5px;
+  padding: 10px 0;
+  margin-top: 30px;
+  /* background-color: var(--color); */
+}
+.con{
+  /* background-color: var(--color); */
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: black;
+  font-size: 15px;
+}
+/* nestin img */
+.nestin-image-container{
+  width: 1000px;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+.nestin-img-pc{
+  width: 700px;
+  object-fit: cover;
+}
+.nestin-img-mobile{
+  width: 200px;
+}
+
