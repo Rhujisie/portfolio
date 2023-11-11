@@ -3,26 +3,21 @@ import './spinner.css'
 import {motion, AnimatePresence} from 'framer-motion'
 
 export default function Spinner() {
-  const [word, setWord] = useState('Portfolio Website')
-  const [number, setNumber] = useState(0)
+  // const [word, setWord] = useState('Portfolio Website')
+  const [number, setNumber] = useState([0, 'Portfolio Website'])
 
   const change = ()=>{
     const scrollY = window.scrollY;
     if(scrollY > 2800){
-      setWord('Project    Ext')
-      setNumber(4)
+      setNumber([4, 'Project    Ext'])
     }else if(scrollY > 2100){
-      setWord('Project  Flappy')
-      setNumber(3)
+      setNumber([3, 'Project  Flappy'])
     }else if(scrollY > 1300){
-      setWord('Project ChitChat')
-      setNumber(2)
+      setNumber([2, 'Project ChitChat'])
     }else if(scrollY > 400){
-      setWord('Project   NestIn')
-      setNumber(1)
+      setNumber([1, 'Project   NestIn'])
     }else{
-      setWord('Portfolio Website')
-      setNumber(0)
+      setNumber([0, 'Portfolio Website'])
     }
   }
   useEffect(()=>{
@@ -33,9 +28,9 @@ export default function Spinner() {
   }, [])
   // spinner elem
   const wordElem = [] 
-  for(let i = 0; i < word.length; i++){
+  for(let i = 0; i < number[1].length; i++){
     wordElem.push(<span key={i} 
-      style={{transform: `rotate(${i * 20}deg)`}}>{word[i]}</span>)
+      style={{transform: `rotate(${i * 20}deg)`}}>{number[1][i]}</span>)
   }
 
   return (
@@ -49,7 +44,7 @@ export default function Spinner() {
             exit={{ y: -10, opacity: 0 }}
             transition={{ duration: 0.2 }}
           >
-            {number}
+            {number[0]}
         </motion.div>
       </AnimatePresence>
       <AnimatePresence mode='wait'>
@@ -57,7 +52,7 @@ export default function Spinner() {
            animate={{rotate: 360, opacity: 1}}
           transition={{repeat: Infinity, repeatType: "loop",
           duration: 4, ease: 'linear', y: {duration: .2}, opacity: {duration: .2}}} 
-          exit={{opacity: 0 }} key={word}>
+          exit={{opacity: 0 }}>
             {wordElem}
         </motion.div>
       </AnimatePresence>

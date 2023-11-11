@@ -1,4 +1,5 @@
-import Esie from '../images/man.png'
+import Esie from '../images/esie.png'
+import Man from '../images/man.png'
 import {motion, useScroll, useTransform} from 'framer-motion'
 import useFollowPointer from './follow-mouse/useFollowPointer'
 import { useRef } from 'react'
