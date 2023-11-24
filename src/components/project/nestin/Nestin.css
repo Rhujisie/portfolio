@@ -37,9 +37,8 @@
 }
 .tech-container{
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 30px;
+  flex-direction: column;
+  gap: 15px;
 }
 .tech-name{
   border-radius: 10px;

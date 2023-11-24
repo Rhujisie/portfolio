@@ -71,9 +71,9 @@ export default function Flappy() {
             <motion.div className='tech-container'>
                 {techElem}
             </motion.div>
-            <motion.div className='conclusion-container'>
+            {/* <motion.div className='conclusion-container'>
                 {conElem}
-            </motion.div>
+            </motion.div> */}
         </motion.div>
     </motion.div>
   )

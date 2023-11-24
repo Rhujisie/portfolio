@@ -54,7 +54,7 @@ export default function ChitChat() {
     <motion.div className={`project chitchat`}>
         <motion.div className={`chitchat-image-container`} variants={imageVariant}
         initial='hidden' whileInView='visible'
-        viewport={{ once: true, amount: 0.2 }}>
+        viewport={{ once: true, amount: 0.3 }}>
             <motion.img src={ChitLeft} alt='chit chat' className='chitchat-img-1'/> 
             <motion.img src={ChitRight} alt='chit chat' className='chitchat-img-2'
             variants={imageChildrenVariant}/>
@@ -81,9 +81,9 @@ export default function ChitChat() {
             <motion.div className='tech-container'>
                 {techElem}
             </motion.div>
-            <motion.div className='conclusion-container'>
+            {/* <motion.div className='conclusion-container'>
                 {conElem}
-            </motion.div>
+            </motion.div> */}
         </motion.div>
     </motion.div>
   )
